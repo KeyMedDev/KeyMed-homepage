@@ -10,14 +10,27 @@
     --button-text: 15px; 
 }
 
-nav {
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    padding: 1rem;    
+html {
+    overscroll-behavior: none;
+}
+
+header {
     position: sticky;
     top: 0;
     z-index: 100;
+}
+
+nav {
+    justify-content: center;
+    display: flex;
+    width: 100%; 
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6); 
 }
 
 nav ul {
@@ -52,8 +65,11 @@ body{
     background-color: var(--primary-color);
     font-family: var(--body-text);
     text-align: justify;
-    margin: 1% 30% 1% 30%; 
     font-size: 17px;
+}
+
+main {
+    margin: 1% 30% 1% 30%;
 }
 
 h1, h2, h3{
@@ -91,7 +107,7 @@ h1, h2, h3{
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 5rem;
+    gap: 4rem;
     margin: 0;
     padding: 0;
     font-size: 1rem; 
