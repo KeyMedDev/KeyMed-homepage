@@ -1,7 +1,7 @@
 :root{
     --bg-color: #fff;
     --text-color: #212121;
-    --primary-color: #f0e6da;
+    --primary-color: #f7f0e9;
     --secondary-color: #1c412daa;
     --primary-color-button: #309695;
     --darkmode-color-button: #815ad6;
@@ -9,6 +9,12 @@
     --title-text: 'Poppins', sans-serif;
     --body-text: 'Inter', sans-serif;
     --button-text: 15px; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -35,6 +41,8 @@ nav {
 }
 
 nav ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
     align-items: center;
     justify-content: center;
     list-style: none;
@@ -46,7 +54,7 @@ nav ul {
 }
 
 nav ul li a{
-    font-family: var(--title-body);
+    font-family: var(--title-text);
     text-decoration: none;
     color: inherit;
 }
@@ -54,35 +62,72 @@ nav ul li a{
 nav ul li button{
     font-size: var(--button-text);
     border: none;
-    padding: 5px 40px ;
-    border-radius: 5px;
+    padding: 0.4em 2em;
+    border-radius: 25px;
     justify-content: center;
     background-color: var(--darkmode-color-button);
     color: var(--bg-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav ul li button:hover{
+    background-color: darkblue;
     cursor: pointer;
 }
 
 body{
     background-color: var(--primary-color);
     font-family: var(--body-text);
-    text-align: justify;
+    text-align: left;
     font-size: 17px;
+    line-height: 1.6;
 }
 
 main {
-    margin: 1% 33% 1% 33%;
+    margin: 1% 30% 1% 30%;
 }
 
 h1, h2, h3{
     font-family: var(--title-text);
 }
+/*
+.section-model{
+    filter: saturate(100%);
+    filter: contrast(130%);
+}*/
+
+/* SECCION TITULO PRINCIPAL */
+.section-title{
+    margin-bottom: 30px;
+    text-align: center;
+}
 
 .section-title h1{
     justify-content: right;
+    margin-bottom: 10px;
 }
 
 .section-title p{
     justify-content: right;
+    margin-top: 10px;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.section-aboutme h2 {
+    margin-bottom: 15px;
+}
+
+.section-aboutme{
+    margin-bottom: 30px;
+}
+
+.section-aboutme div{
+    display: flex;
+    justify-content: center;
+    padding: 1.5% 1% 1% 1%;
+    gap: 50px;
 }
 
 .section-works div{
@@ -91,15 +136,43 @@ h1, h2, h3{
     padding: 1.5% 1% 1% 1%;
 }
 
-.section-works button{
+.section-works h2{
+    margin-bottom: 15px;
+}
+
+.section-works{
+    margin-bottom: 30px;
+}
+
+.btn-primary {
     font-size: var(--button-text);
-    border: none;
-    padding: 10px 30px;
-    border-radius: 5px;
-    justify-content: center;
+    font-family: var(--body-text);
     background-color: var(--primary-color-button);
     color: var(--bg-color);
+    
+    border: none;
+    padding: 0.625rem 1.875rem;
+    border-radius: 5px;
+    justify-content: center;
     cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.section-hobbies{
+    margin-top: 30px;
+}
+
+.section-hobbies h2{
+    margin-bottom: 10px;
+}
+
+.section-mysocials{
+    margin-top: 30px;
+}
+
+.section-mysocials h2{
+    margin-bottom: 10px;
 }
 
 .section-mysocials ul{
@@ -108,7 +181,7 @@ h1, h2, h3{
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 5.8rem;
     margin: 0;
     padding: 0;
     font-size: 1rem; 
@@ -120,22 +193,32 @@ h1, h2, h3{
     color: var(--secondary-color)
 }
 
+.section-newslatter{
+    margin-top: 30px;
+}
+
+.section-newslatter h2{
+    margin-bottom: 10px;
+}
+
 .section-newslatter div{
     display: flex;
     justify-content: center;
     padding: 1.5% 1% 1% 1%;
 }
 
-.section-newslatter button{
+/*.section-newslatter button{
     font-size: var(--button-text);
+    font-family: var(--body-text);
     border: none;
-    padding: 10px 40px;
+    padding: 0.625rem 2.5rem;
     border-radius: 5px;
     justify-content: center;
     background-color: var(--primary-color-button);
     color: var(--bg-color);
     cursor: pointer;
-}
+    margin-top: 10px;
+}*/
 
 footer{
     text-align: center;
@@ -143,3 +226,131 @@ footer{
     color: var(--small-text);
 }
 
+
+/* Grid de cards */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 0.938rem;
+}
+
+/* Card */
+.card {
+    background-color: var(--bg-color);
+    border-radius: 12px;
+    overflow: hidden; /* hace que la imagen respete el border-radius */
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Imagen edge-to-edge */
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* recorta sin deformar */
+    display: block;
+}
+
+/* Cuerpo de la card */
+.card-body {
+    padding: 1.2rem 1.4rem !important;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1; /* empuja el footer al fondo */
+}
+
+.card-title {
+    font-family: var(--title-text);
+    font-size: 1.05rem;
+    color: var(--text-color);
+}
+
+.card-desc {
+    font-size: 0.875rem;
+    color: var(--small-text);
+    line-height: 1.5;
+    flex: 1;
+}
+
+/* Footer de la card */
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: rem;
+    gap: 1rem; /* evita que se peguen cuando el texto es largo */
+}
+
+.card-tech {
+    font-size: 0.78rem;
+    color: var(--small-text);
+    font-family: var(--body-text);
+    white-space: nowrap; /* evita que se rompa en dos líneas */
+}
+
+/* Botón de la card */
+.card-btn {
+    font-size: 0.85rem;
+    font-family: var(--body-text);
+    text-decoration: none;
+    color: var(--primary-color-button);
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+    white-space: nowrap; /* evita que se rompa en dos líneas */
+}
+
+.card-btn:hover {
+    opacity: 0.7;
+}
+
+/* Tags con color por categoría */
+.card-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.tag-web {
+    background-color: #e0f0ff;
+    color: #185FA5;
+}
+
+.tag-app {
+    background-color: #e1f5ee;
+    color: #0F6E56;
+}
+
+.tag-game {
+    background-color: #f0eefe;
+    color: #534AB7;
+}
+
+.tag-hardware {
+    background-color: #f0eefe;
+    color: #239123;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.card-img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card:hover .card-img {
+    transform: scale(1.05);
+    filter: brightness(0.85);
+}

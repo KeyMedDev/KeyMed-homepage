@@ -1,64 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/animations.css">
     <title>S1441s!</title>
 </head>
+
 <body>
     <header>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Works</li>
-                    <li>Post</li>
-                    <li><a href="https://github.com/KeyMedDev/KeyMed-homepage" target="_blank"><i class="fab fa-github"></i> Source</a></li>
-                    <li><button><img width="20" height="20" src="assets/icons/moon.png" alt="icon/moon"></button></li>
-                </ul>
-            </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/works.html">Works</a></li>
+                <li><a href="pages/posts.html">Contact</a></li>
+                <li><a href="https://github.com/KeyMedDev/KeyMed-homepage" target="_blank"><i class="fab fa-github"></i>
+                        Source</a></li>
+                <li><button><img width="20" height="20" src="assets/icons/moon.png" alt="icon/moon"></button></li>
+            </ul>
+        </nav>
     </header>
+    <section class="section-model">
+        <model-viewer src="assets/3D/medieval_fantasy_book.glb" auto-rotate field-of-view="10deg" shadowpintensity="5"
+            camera-orbit="50deg 70deg 50m" style="width: 100%; height: 400px;"></model-viewer>
+    </section>
+
     <body>
         <main>
-            <section class="section-model">
-                <model-viewer src="assets/3D/smol_ame_in_an_upcycled_terrarium_hololiveen.glb" auto-rotate camera-controls field-of-view="50deg" shadowpintensity="5" camera-orbit="0deg 75deg 2m"  style="width: 100%; height: 400px;"></model-viewer>
-            </section>
             <section class="section-title">
-                <h1>Kevin Medina <small>(Key Med)</small></h1><hr>
-                <p>Information Systems Development Student</p>
+                <h1>Kevin Medina <small>(Key Med)</small></h1>
+                <hr>
+                <p><i>Information Systems Development Student</i></p>
+            </section>
+            <section class="section-aboutme">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos obcaecati aperiam mollitia
+                    inventore dolorum in rem animi consequatur cupiditate deleniti saepe, repellendus velit dicta labore
+                    distinctio provident quisquam molestiae cumque.</p>
+                <div>
+                    <a href="https://www.linkedin.com/in/keymedina/" target="_blank"><button class="btn-primary"><i
+                                class="fab fa-linkedin"></i> Linkedin</button></a>
+                    <a href=""><button class="btn-primary">Download CV</button></a>
+                    <a href="https://github.com/KeyMedDev" target="_blank"><button class="btn-primary"><i
+                                class="fab fa-github"></i> Github</button></a>
+                </div>
             </section>
             <section class="section-works">
                 <h2>Works</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo modi molestiae ipsa animi, accusamus quos odit eos sint tempora delectus similique rerum nobis fuga eius blanditiis asperiores dignissimos totam soluta! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae maiores fugit perspiciatis amet quidem iusto cumque temporibus deleniti inventore provident tempore perferendis, placeat corrupti possimus enim impedit quo. Sequi, aperiam.</p>
-                <div>
-                    <button><strong>View my Portfolio =></strong></button>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo modi molestiae ipsa animi, accusamus
+                    quos odit eos sint tempora.</p>
+                <div class="cards-grid">
+                    <article class="card">
+                        <img src="assets/img/sendero_digital.png" alt="Project 1" class="card-img">
+                        <div class="card-body" onclick="window.open('https://github.com/KeyMedDev/proyecto1', '_blank')">
+                            <span class="card-tag tag-web">Web</span>
+                            <h3 class="card-title">Sendero Digital</h3>
+                            <p class="card-desc">Breve descripción del proyecto, qué problema resuelve y qué tecnologías
+                                usaste.</p>
+                            <div class="card-footer">
+                                <span class="card-tech">Wordpress · PHP</span>
+                                <a href="#" class="card-btn" target="_blank">Ver proyecto →</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card" onclick="window.open('https://github.com/KeyMedDev/proyecto1', '_blank')">
+                        <img src="assets/img/project.png" alt="Project 2" class="card-img">
+                        <div class="card-body">
+                            <span class="card-tag tag-app">APP</span>
+                            <h3 class="card-title">Sistema Gestor de Cursos</h3>
+                            <p class="card-desc">Breve descripción del proyecto, qué problema resuelve y qué tecnologías
+                                usaste.</p>
+                            <div class="card-footer">
+                                <span class="card-tech">Java · MySQL</span>
+                                <a href="#" class="card-btn" target="_blank">Ver proyecto →</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="cards-grid" onclick="window.open('https:/www./github.com/KeyMedDev/proyecto1', '_blank')">
+                    <article class="card">
+                        <img src="assets/img/alura_project.png" alt="Project 3" class="card-img">
+                        <div class="card-body">
+                            <span class="card-tag tag-game">GAME</span>
+                            <h3 class="card-title">Alura Project - Amigo Secreto</h3>
+                            <p class="card-desc">Breve descripción del proyecto, qué problema resuelve y qué tecnologías
+                                usaste.</p>
+                            <div class="card-footer">
+                                <span class="card-tech">HTML · CSS · JS</span>
+                                <a href="#" class="card-btn" target="_blank">Ver proyecto →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card" onclick="window.open('https://github.com/KeyMedDev/proyecto1', '_blank')">
+                        <img src="assets/img/cnc_arduino.jpg" alt="Project 4" class="card-img">
+                        <div class="card-body">
+                            <span class="card-tag tag-hardware">HARDWARE</span>
+                            <h3 class="card-title">CNC with Arduino</h3>
+                            <p class="card-desc">Breve descripción del proyecto, qué problema resuelve y qué tecnologías
+                                usaste.</p>
+                            <div class="card-footer">
+                                <span class="card-tech">C · Python</span>
+                                <a href="#" class="card-btn" target="_blank">Ver proyecto →</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </section>
-            <section class="section-hobies">
-                <h2>I ❤</h2>
-                <p>Music, SimRacing, Computer Science, Electronics and Psysics</p>
-            </section>
             <section class="section-mysocials">
-                <h2>My Socials</h2>
+                <h2>Socials</h2>
                 <ul>
-                    <li><a href="https://www.fa-linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> @Keymed</a></li>
-                    <li><a href="https://www.x.com" target="_blank"><i class="fab fa-twitter"></i> @KeymedDev</a></li>
-                    <li><a href="https://www.github.com" target="_blank"><i class="fab fa-github"></i> @KeyMedDev</a></li>
-                    <li><a href="https://www.discord.com" target="_blank"><i class="fab fa-discord"></i> @KeyMedDev</a></li>
+                    <li><a href="https://www.linkedin.com/in/keymedina/" target="_blank"><i class="fab fa-linkedin"></i>
+                            @Keymed</a></li>
+                    <li><a href="https://www.x.com/KeyMedDev" target="_blank"><i class="fab fa-twitter"></i>
+                            @KeymedDev</a></li>
+                    <li><a href="https://github.com/KeyMedDev" target="_blank"><i class="fab fa-github"></i>
+                            @KeyMedDev</a>
+                    </li>
+                    <li><a href="https://www.discord.com" target="_blank"><i class="fab fa-discord"></i> @KeyMedDev</a>
+                    </li>
                 </ul>
             </section>
             <section class="section-newslatter">
                 <h2>Newslatter</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugiat blanditiis cupiditate ratione repellendus, repudiandae aliquid.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugiat blanditiis cupiditate
+                    ratione repellendus, repudiandae aliquid.</p>
                 <div>
-                    <button><strong>Sign up my Newslatter here</strong></button>
+                    <a href=""><button class="btn-primary">Sign up my Newslatter here</button></a>
                 </div>
             </section>
             <footer>
@@ -66,5 +143,5 @@
             </footer>
         </main>
     </body>
-</body>
+
 </html>
