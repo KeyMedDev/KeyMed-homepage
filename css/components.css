@@ -1,0 +1,348 @@
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn-primary {
+    font-size: var(--button-text);
+    font-family: var(--body-text);
+    background-color: var(--primary-color-button);
+    color: var(--bg-color);
+    border: none;
+    padding: 0.625rem 1.875rem;
+    border-radius: 5px;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.btn-submit {
+    font-size: var(--button-text);
+    font-family: var(--body-text);
+    background-color: var(--primary-color-button);
+    color: var(--bg-color);
+    border: none;
+    padding: 0.625rem 1.875rem;
+    border-radius: 5px;
+    justify-content: center;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 0.938rem;
+}
+
+.card {
+    background-color: var(--bg-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body {
+    padding: 1.2rem 1.4rem !important;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.card-title {
+    font-family: var(--title-text);
+    font-size: 1.05rem;
+    color: var(--text-color);
+}
+
+.card-desc {
+    font-size: 0.875rem;
+    color: var(--small-text);
+    line-height: 1.5;
+    flex: 1;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.8rem;
+    gap: 1rem;
+}
+
+.card-tech {
+    font-size: 0.78rem;
+    color: var(--small-text);
+    font-family: var(--body-text);
+    white-space: nowrap;
+}
+
+.card-btn {
+    font-size: 0.85rem;
+    font-family: var(--body-text);
+    text-decoration: none;
+    color: var(--primary-color-button);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* ============================================================
+   TAGS
+   ============================================================ */
+.card-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.tag-web {
+    background-color: #e0f0ff;
+    color: #185FA5;
+}
+
+.tag-app {
+    background-color: #e1f5ee;
+    color: #0F6E56;
+}
+
+.tag-game {
+    background-color: #f0eefe;
+    color: #534AB7;
+}
+
+.tag-hardware {
+    background-color: #f0eefe;
+    color: #239123;
+}
+
+/* ============================================================
+   FORMS
+   ============================================================ */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.7rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    font-family: var(--body-text);
+    font-size: 0.95rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    outline: none;
+    transition: border 0.2s ease;
+    resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border: 1px solid var(--primary-color-button);
+}
+
+.contact-form .btn-primary {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+}
+
+/* ============================================================
+   NEWSLETTER
+   ============================================================ */
+.newsletter-form {
+    margin-top: 1rem;
+}
+
+.newsletter-input-group {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+}
+
+.newsletter-input-group input[type="email"] {
+    flex: 1;
+    min-width: 0;
+    padding: 0.60rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    font-family: var(--body-text);
+    font-size: 0.95rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+.newsletter-input-group input[type="email"]:focus {
+    border: 1px solid var(--primary-color-button);
+}
+
+/* ============================================================
+   SECTIONS
+   ============================================================ */
+.section-model {
+    filter: contrast(130%);
+}
+
+.section-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.section-title h1 {
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    margin-top: 10px;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.section-works {
+    margin-bottom: 30px;
+}
+
+.section-works div {
+    display: flex;
+    justify-content: center;
+    padding: 1.5% 1% 1% 1%;
+}
+
+.section-works h2 {
+    margin-bottom: 15px;
+}
+
+.section-mysocials {
+    margin-top: 30px;
+}
+
+.section-mysocials h2 {
+    margin-bottom: 10px;
+}
+
+.section-mysocials ul {
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5.8rem;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.section-mysocials ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.section-newslatter {
+    margin-top: 30px;
+}
+
+.section-newslatter h2 {
+    margin-bottom: 10px;
+}
+
+.section-newslatter div {
+    display: flex;
+    justify-content: center;
+    padding: 1.5% 1% 1% 1%;
+}
+
+.section-aboutme {
+    margin-top: 3rem;
+    margin-bottom: 30px;
+}
+
+.section-aboutme h2 {
+    margin-bottom: 15px;
+}
+
+.section-aboutme div {
+    display: flex;
+    justify-content: center;
+    padding: 1.5% 1% 1% 1%;
+    gap: 50px;
+}
+
+/* ============================================================
+   ABOUT ME LAYOUT
+   ============================================================ */
+.aboutme-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    align-items: flex-start;
+}
+
+.aboutme-img-wrapper {
+    flex-shrink: 0;
+}
+
+.aboutme-img {
+    width: 300px;
+    height: 630px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.aboutme-content,
+.contactme-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+
+.aboutme-content hr,
+.contactme-content hr {
+    margin: 0.3rem 0;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.aboutme-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
