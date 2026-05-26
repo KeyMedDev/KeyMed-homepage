@@ -1,9 +1,17 @@
 /**
- * Gestión de Formularios y Estados de Envío
- * Maneja el envío asíncrono (AJAX) para el formulario de contacto y la newsletter.
+ * @file main.js
+ * @description Gestión de Formularios y Estados de Envío.
+ * Maneja la lógica de validación y envío asíncrono (AJAX) para el formulario 
+ * de contacto (Formspree) y la suscripción a la newsletter (Mailchimp).
+ * @author KeyMed
+ * @version 1.0.0
  */
 
 // --- SECCIÓN: FORMULARIO DE CONTACTO (Formspree) ---
+/**
+ * Configuración del formulario de contacto.
+ * Utiliza la API de Fetch para enviar datos a Formspree.
+ */
 const contactForm = document.querySelector('.contact-form');
 
 if (contactForm) {
@@ -11,6 +19,11 @@ if (contactForm) {
     const contactStatus = document.getElementById('contact-status');
 
     contactForm.addEventListener('submit', async function (event) {
+        /**
+         * @param {SubmitEvent} event - Evento de envío del formulario.
+         * @description Previene el comportamiento por defecto, recopila los datos
+         * del formulario y gestiona la respuesta visual para el usuario.
+         */
         // Evita que el navegador abra la página de agradecimiento de Formspree
         event.preventDefault();
 
@@ -54,6 +67,11 @@ if (contactForm) {
 }
 
 // --- SECCIÓN: NEWSLETTER (Mailchimp) ---
+/**
+ * Configuración del formulario de Newsletter.
+ * Maneja la integración con Mailchimp utilizando modo 'no-cors' debido a 
+ * restricciones de origen cruzado de su API gratuita.
+ */
 const newsletterForm = document.querySelector('.newsletter-form');
 
 if (newsletterForm) {
@@ -61,6 +79,11 @@ if (newsletterForm) {
     const newsletterStatus = document.getElementById('newsletter-status');
 
     newsletterForm.addEventListener('submit', async function (event) {
+        /**
+         * @param {SubmitEvent} event - Evento de envío de suscripción.
+         * @description Envía el correo del usuario a Mailchimp y simula el éxito
+         * basándose en la resolución de la promesa fetch.
+         */
         // Evita que se abra la pestaña de confirmación de Mailchimp
         event.preventDefault();
 

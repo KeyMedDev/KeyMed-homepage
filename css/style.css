@@ -1,6 +1,10 @@
 /**
- * ESTILOS GLOBALES Y VARIABLES
- * Define la identidad visual básica y la estructura principal del sitio.
+ * @file style.css
+ * @description Configuración base y estilos globales.
+ * Define la paleta de colores (variables CSS), tipografías, normalización
+ * de elementos HTML y la estructura de navegación principal (Header/Nav).
+ * @author KeyMed
+ * @section Root, Reset, Base, Layout, Navigation
  */
 
 :root {
@@ -54,8 +58,9 @@ footer {
 
 /* NAVEGACIÓN: Barra superior fija con efecto de desenfoque (glassmorphism) */
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     z-index: 100;
 }
 
@@ -71,6 +76,10 @@ nav {
     box-shadow:
         0 4px 20px rgba(0, 0, 0, 0.08),
         inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    transform: translateZ(0);
+    /* Fuerza la aceleración por hardware para mantener el blur activo */
+    will-change: backdrop-filter;
+    /* Indica al navegador que el filtro cambiará/debe estar activo */
 }
 
 /* Lista de navegación y espaciado entre elementos */

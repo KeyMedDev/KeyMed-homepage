@@ -1,6 +1,9 @@
 /**
- * COMPONENTES DE INTERFAZ
- * Estilos modulares para elementos reutilizables como botones, tarjetas y formularios.
+ * @file components.css
+ * @description Librería de componentes reutilizables (UI Kit).
+ * Contiene los estilos modulares para botones, tarjetas de proyecto, etiquetas,
+ * formularios y secciones específicas del layout.
+ * @section Buttons, Cards, Tags, Forms, Layouts
  */
 
 /* BOTONES: Estilos para acciones principales y envíos */
@@ -220,7 +223,8 @@
 
 /* SECCIONES: Márgenes y espaciados internos de los bloques de contenido */
 .section-model {
-    filter: contrast(130%);
+    filter: contrast(140%);
+    filter: saturate(130%);
 }
 
 .section-title {
@@ -292,6 +296,11 @@
     margin-bottom: 30px;
 }
 
+.section-aboutme-page {
+    margin-top: 7rem;
+    margin-bottom: 30px;
+}
+
 .section-aboutme h2 {
     margin-bottom: 15px;
 }
@@ -317,7 +326,7 @@
 
 .aboutme-img {
     width: 300px;
-    height: 630px;
+    height: 610px;
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
@@ -372,7 +381,6 @@
 
 .certificates-table th {
     background-color: rgba(48, 150, 149, 0.1);
-    /* Variación del color primario */
     color: var(--primary-color-button);
     font-family: var(--title-text);
     font-weight: 600;
@@ -381,4 +389,10 @@
 .certificates-table tr:hover {
     background-color: rgba(247, 240, 233, 0.5);
     transition: background-color 0.2s ease;
+}
+
+.certificates-table tfoot {
+    background-color: rgba(206, 245, 245, 0.5);
+    color: var(--primary-color-button);
+    font-weight: 600;
 }

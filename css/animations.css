@@ -1,6 +1,9 @@
 /**
- * ANIMACIONES Y ESTADOS DE INTERACCIÓN
- * Define las transiciones y efectos visuales al interactuar con el mouse o teclado.
+ * @file animations.css
+ * @description Definición de micro-interacciones, transiciones y animaciones.
+ * Controla los efectos visuales de hover, enfoque (focus) y elevación de elementos
+ * para mejorar la experiencia de usuario (UX).
+ * @section Cards, Buttons, Form Focus
  */
 
 /* EFECTOS EN TARJETAS: Elevación y zoom en la imagen al pasar el ratón */

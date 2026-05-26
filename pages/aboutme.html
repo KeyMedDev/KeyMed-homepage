@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,29 +14,28 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/animations.css">
-    <title>About Me</title>
+    <title>Sobre Mí</title>
 </head>
-<header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li class="active"><a href="aboutme.html">About Me</a></li>
-            <li><a href="aboutme.html#contact">Contact</a></li>
-            <li><a href="https://github.com/KeyMedDev/KeyMed-homepage" target="_blank"><i class="fab fa-github"></i>
-                    Source</a></li>
-        </ul>
-    </nav>
-</header>
-
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li class="active"><a href="aboutme.html">Sobre Mí</a></li>
+                <li><a href="aboutme.html#contact">Contacto</a></li>
+                <li><a href="https://github.com/KeyMedDev/KeyMed-homepage" target="_blank"><i class="fab fa-github"></i>
+                        Código</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <section class="section-aboutme">
+        <section class="section-aboutme-page">
             <article class="aboutme-layout">
                 <div class="aboutme-img-wrapper">
                     <img src="../assets/img/example-img.jpg" alt="Kevin Medina" class="aboutme-img">
                 </div>
                 <article class="aboutme-content">
-                    <h1>About Me</h1>
+                    <h1>Sobre Mí</h1>
                     <hr>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos obcaecati aperiam mollitia
                         inventore dolorum in rem animi consequatur cupiditate deleniti saepe, repellendus velit dicta
@@ -51,23 +49,23 @@
                         <a href="https://www.linkedin.com/in/keymedina/" target="_blank"><button class="btn-primary"><i
                                     class="fab fa-linkedin"></i> Linkedin</button></a>
                         <a href="../assets/cv/Kevin-Medina_CV.pdf" download><button class="btn-primary"><i
-                                    class="fa fa-file-download"></i> Download CV</button></a>
+                                    class="fa fa-file-download"></i> Descargar CV</button></a>
                     </div>
                 </article>
             </article>
         </section>
         <section class="section-certificates">
             <div class="aboutme-content">
-                <h2>Certificates</h2>
+                <h2>Certificaciones</h2>
                 <hr>
             </div>
             <table class="certificates-table">
                 <thead>
                     <tr>
-                        <th>Certificate Name</th>
-                        <th>Issued By</th>
-                        <th>Date</th>
-                        <th>Link</th>
+                        <th>Nombre del Certificado</th>
+                        <th>Emitido por</th>
+                        <th>Fecha</th>
+                        <th>Enlace</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -75,36 +73,36 @@
                         <td>Google Data Analytics Professional</td>
                         <td>Coursera</td>
                         <td>Jan 2025</td>
-                        <td><a href="#" class="card-btn">View →</a></td>
+                        <td><a href="#" class="card-btn">Ver →</a></td>
                     </tr>
                     <tr>
                         <td>AWS Solutions Architect</td>
                         <td>Amazon Web Services</td>
                         <td>Dec 2024</td>
-                        <td><a href="#" class="card-btn">View →</a></td>
+                        <td><a href="#" class="card-btn">Ver →</a></td>
                     </tr>
                     <tr>
                         <td>Full Stack Web Development</td>
                         <td>FreeCodeCamp</td>
                         <td>Oct 2024</td>
-                        <td><a href="#" class="card-btn">View →</a></td>
+                        <td><a href="#" class="card-btn">Ver →</a></td>
                     </tr>
                     <tr>
                         <td>UI/UX Design Fundamentals</td>
                         <td>Interaction Design Foundation</td>
                         <td>Aug 2024</td>
-                        <td><a href="#" class="card-btn">View →</a></td>
+                        <td><a href="#" class="card-btn">Ver →</a></td>
                     </tr>
                     <tr>
                         <td>Introduction to Cybersecurity</td>
                         <td>Cisco</td>
                         <td>June 2024</td>
-                        <td><a href="#" class="card-btn">View →</a></td>
+                        <td><a href="#" class="card-btn">Ver →</a></td>
                     </tr>
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="3">Total Certificates</td>
+                        <td colspan="3">Total de Certificados</td>
                         <td>5</td>
                     </tr>
                 </tfoot>
@@ -113,33 +111,31 @@
         <section>
             <article>
                 <div class="contactme-content">
-                    <h2 id="contact">Contact Me</h2>
+                    <h2 id="contact">Contáctame</h2>
                     <hr>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <form class="contact-form" action="https://formspree.io/f/xykvzjaz" method="POST">
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
                     </div>
                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Your message..."
-                            required></textarea>
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tu mensaje..." required></textarea>
                     </div>
-                    <button type="submit" class="btn-primary">Send message →</button>
+                    <button type="submit" class="btn-primary">Enviar mensaje →</button>
                     <p id="contact-status" class="form-status"></p>
                 </form>
             </article>
         </section>
         <footer>
-            <small>2026 Kevin Medina & Strukly Studios. All Rights Reserved.</small>
+            <small>2026 Kevin Medina & Strukly Studios. Todos los derechos reservados.</small>
         </footer>
     </main>
 </body>
-
 </html>
