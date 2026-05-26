@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script src="../js/main.js" defer></script>
     <link rel="shortcut icon" href="../assets/icons/ico-web.ico" type="image/x-icon">
@@ -21,11 +23,13 @@
             <li><a href="../index.html">Home</a></li>
             <li class="active"><a href="aboutme.html">About Me</a></li>
             <li><a href="aboutme.html#contact">Contact</a></li>
-            <li><a href="https://github.com/KeyMedDev/KeyMed-homepage" target="_blank"><i class="fab fa-github"></i> Source</a></li>
+            <li><a href="https://github.com/KeyMedDev/KeyMed-homepage" target="_blank"><i class="fab fa-github"></i>
+                    Source</a></li>
             <li><button><img width="20" height="20" src="../assets/icons/moon.png" alt="icon/moon"></button></li>
         </ul>
     </nav>
 </header>
+
 <body>
     <main>
         <section class="section-aboutme">
@@ -33,22 +37,31 @@
                 <div class="aboutme-img-wrapper">
                     <img src="../assets/img/example-img.jpg" alt="Kevin Medina" class="aboutme-img">
                 </div>
-            <article class="aboutme-content">
-                <h1>About Me</h1><hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos obcaecati aperiam mollitia inventore dolorum in rem animi consequatur cupiditate deleniti saepe, repellendus velit dicta labore distinctio provident quisquam molestiae cumque.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus autem blanditiis perferendis similique saepe molestias quibusdam, repellendus doloremque, cum qui inventore corrupti. Veritatis nemo illum ipsa, enim quis nihil hic?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque enim officiis perferendis incidunt eius quo ea ab officia quidem voluptate, necessitatibus molestias blanditiis explicabo ipsum, minima, excepturi praesentium eveniet nulla.</p>
-                <div class="aboutme-buttons">
-                    <a href="https://www.linkedin.com/in/keymedina/" target="_blank"><button class="btn-primary"><i class="fab fa-linkedin"></i> Linkedin</button></a>
-                    <a href="../assets/cv/Kevin-Medina_CV.pdf" download><button class="btn-primary"><i class="fa fa-file-download"></i> Download CV</button></a>
-                </div>
-            </article>
+                <article class="aboutme-content">
+                    <h1>About Me</h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos obcaecati aperiam mollitia
+                        inventore dolorum in rem animi consequatur cupiditate deleniti saepe, repellendus velit dicta
+                        labore distinctio provident quisquam molestiae cumque.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus autem blanditiis
+                        perferendis similique saepe molestias quibusdam, repellendus doloremque, cum qui inventore
+                        corrupti. Veritatis nemo illum ipsa, enim quis nihil hic?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque enim officiis perferendis incidunt
+                        eius quo ea ab officia quidem voluptate, necessitatibus molestias.</p>
+                    <div class="aboutme-buttons">
+                        <a href="https://www.linkedin.com/in/keymedina/" target="_blank"><button class="btn-primary"><i
+                                    class="fab fa-linkedin"></i> Linkedin</button></a>
+                        <a href="../assets/cv/Kevin-Medina_CV.pdf" download><button class="btn-primary"><i
+                                    class="fa fa-file-download"></i> Download CV</button></a>
+                    </div>
+                </article>
             </article>
         </section>
         <section>
             <article>
-                <div class="contactme-content">                
-                    <h2 id="contact">Contact Me</h2><hr>
+                <div class="contactme-content">
+                    <h2 id="contact">Contact Me</h2>
+                    <hr>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <form class="contact-form" action="https://formspree.io/f/xykvzjaz" method="POST">
@@ -62,9 +75,11 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+                        <textarea id="message" name="message" rows="5" placeholder="Your message..."
+                            required></textarea>
                     </div>
                     <button type="submit" class="btn-primary">Send message →</button>
+                    <p id="contact-status" class="form-status"></p>
                 </form>
             </article>
         </section>
@@ -73,4 +88,5 @@
         </footer>
     </main>
 </body>
+
 </html>

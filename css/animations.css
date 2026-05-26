@@ -1,4 +1,9 @@
-/* CARD HOVER ------------------------------------------------------ */
+/**
+ * ANIMACIONES Y ESTADOS DE INTERACCIÓN
+ * Define las transiciones y efectos visuales al interactuar con el mouse o teclado.
+ */
+
+/* EFECTOS EN TARJETAS: Elevación y zoom en la imagen al pasar el ratón */
 .card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -17,7 +22,7 @@
     filter: brightness(0.85);
 }
 
-/* BUTTON HOVER ------------------------------------------------------ */
+/* EFECTOS EN BOTONES DE TARJETA: Cambio de opacidad sutil */
 .card-btn {
     transition: opacity 0.2s ease;
 }
@@ -26,7 +31,21 @@
     opacity: 0.7;
 }
 
-/* NAV BUTTON HOVER ------------------------------------------------------*/
+/* EFECTOS EN BOTONES PRINCIPALES: Cambio de color y desplazamiento hacia arriba */
+.btn-primary,
+.btn-submit {
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-submit:hover {
+    background-color: #267a79;
+    /* Un tono más oscuro que el original #309695 */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* EFECTOS EN BOTONES DE NAVEGACIÓN: Transición de color de fondo */
 nav ul li button {
     transition: background-color 0.3s ease;
 }
@@ -35,7 +54,7 @@ nav ul li button:hover {
     background-color: darkblue;
 }
 
-/* FORM FOCUS ------------------------------------------------------ */
+/* ENFOQUE EN FORMULARIOS (FOCUS): Suaviza el cambio de color de los bordes al escribir */
 .form-group input,
 .form-group textarea,
 .newsletter-input-group input[type="email"] {
