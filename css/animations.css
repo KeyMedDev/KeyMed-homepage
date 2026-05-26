@@ -45,15 +45,6 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* EFECTOS EN BOTONES DE NAVEGACIÓN: Transición de color de fondo */
-nav ul li button {
-    transition: background-color 0.3s ease;
-}
-
-nav ul li button:hover {
-    background-color: darkblue;
-}
-
 /* ENFOQUE EN FORMULARIOS (FOCUS): Suaviza el cambio de color de los bordes al escribir */
 .form-group input,
 .form-group textarea,

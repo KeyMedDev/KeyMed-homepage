@@ -345,3 +345,39 @@
     flex-wrap: wrap;
     margin-top: 0.5rem;
 }
+
+/* CERTIFICATES TABLE: Estilos para la lista de certificaciones */
+.section-certificates {
+    margin-top: 3rem;
+    margin-bottom: 30px;
+}
+
+.certificates-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background-color: var(--bg-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.certificates-table th,
+.certificates-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.certificates-table th {
+    background-color: rgba(48, 150, 149, 0.1);
+    /* Variación del color primario */
+    color: var(--primary-color-button);
+    font-family: var(--title-text);
+    font-weight: 600;
+}
+
+.certificates-table tr:hover {
+    background-color: rgba(247, 240, 233, 0.5);
+    transition: background-color 0.2s ease;
+}

@@ -9,7 +9,6 @@
     --primary-color: #f7f0e9;
     --secondary-color: #1c412daa;
     --primary-color-button: #309695;
-    --darkmode-color-button: #815ad6;
     --small-text: #7d7d7d;
     --title-text: 'Poppins', sans-serif;
     --body-text: 'Inter', sans-serif;
@@ -99,22 +98,4 @@ nav ul li a {
     text-decoration: none;
     color: inherit;
     font-weight: 200;
-}
-
-/* Botón de cambio de tema (Dark Mode) */
-nav ul li button {
-    font-size: var(--button-text);
-    border: none;
-    padding: 0.4em 2em;
-    border-radius: 25px;
-    justify-content: center;
-    background-color: var(--darkmode-color-button);
-    color: var(--bg-color);
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-nav ul li button:hover {
-    background-color: darkblue;
-    cursor: pointer;
 }
