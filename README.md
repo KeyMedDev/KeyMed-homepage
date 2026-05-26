@@ -1,10 +1,9 @@
 # KeyMed Homepage
 
-Bienvenido al repositorio de la página web oficial de **KeyMed**. Este proyecto es una landing page moderna, minimalista y funcional, diseñada para mostrar un portafolio de proyectos, información profesional y canales de contacto.
+Rpositorio de la página web de **KeyMedDev**. Este proyecto es una landing page moderna, minimalista y funcional, diseñada para mostrar un portafolio de proyectos, información profesional y canales de contacto.
 
 ## 🚀 Características
 
-- **Diseño Responsivo:** Optimizado para dispositivos móviles y escritorio.
 - **Glassmorphism:** Navegación superior con efecto de desenfoque moderno.
 - **Gestión de Proyectos:** Sistema de tarjetas (Cards) con etiquetas categorizadas (Web, App, Game, Hardware).
 - **Integraciones de Formularios:**
@@ -16,7 +15,7 @@ Bienvenido al repositorio de la página web oficial de **KeyMed**. Este proyecto
 
 - **HTML5:** Estructura semántica.
 - **CSS3:** Diseño personalizado utilizando variables, Flexbox y CSS Grid.
-- **JavaScript (ES6+):** Lógica de envío asíncrono y manipulación del DOM.
+- **JavaScript:** Lógica de envío asíncrono y manipulación del DOM.
 - **Google Fonts:** Tipografías 'Poppins' e 'Inter'.
 
 ## 📁 Estructura del Proyecto
@@ -42,8 +41,5 @@ Para que los formularios funcionen correctamente, asegúrate de actualizar los a
 
 ## ✒️ Autor
 
-**KeyMed**  
+**KeyMedDev**  
 *Desarrollador y Diseñador del sitio.*
-
----
-© 2024 KeyMed. Todos los derechos reservados.
